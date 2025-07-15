@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="body-styles">
+
+    <div id="quiz-container" class="quiz-container">
+        <h1 class="main-title">General Knowledge Quiz</h1>
+        <div class="title-underline"></div>
+
+        <!-- Question Section -->
+        <div id="question-section">
+            <h2 id="question-text" class="question-text">Question text here...</h2>
+            <div id="answer-buttons" class="answer-buttons-grid">
+            </div>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="controls-container">
+             <div id="progress-text" class="progress-text">Question 1 of 5</div>
+             <button id="next-btn" class="next-btn" disabled>Next</button>
+        </div>
+
+        <!-- Score Section -->
+        <div id="score-section" class="score-section hidden">
+            <h2 id="score-text" class="score-text">You scored 0 out of 0!</h2>
+            <p id="score-feedback" class="score-feedback"></p>
+            <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
